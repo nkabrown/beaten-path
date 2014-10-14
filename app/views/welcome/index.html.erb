@@ -1,0 +1,11 @@
+<h1>Dear Beaten Path...</h1>
+
+<div id="login-form">
+<%= form_tag("/entries", method: "get") do %>
+  <%= label_tag(:email, "Email") %>
+  <%= email_field(:user, :address) %><br>
+  <%= label_tag(:password, "Password") %>
+  <%= password_field_tag(:password) %><br>
+  <%= submit_tag("Enter") %>
+<% end %>
+</div>
